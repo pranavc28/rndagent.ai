@@ -32,7 +32,8 @@ class RNDAgent:
             vector_store_id=vector_store.id,
             files=file_streams
         )
-        
+        print(file_batch.status)
+        print(file_batch.file_counts)
         return vector_store
 
     def update_assistant_with_vector_store(self, assistant_id, vector_store_id):
@@ -158,7 +159,7 @@ class RNDAgent:
         
         # Read instructions template
         prompt_path = os.path.join(os.path.dirname(__file__), instructions_path)
-        print(prompt_path)
+
         instructions = self.read_template(prompt_path)
         
         # Read question template
