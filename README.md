@@ -6,6 +6,7 @@ Prerequisites to download and run:
 
 Steps to run:
 - Clone the repo
+- cd to the repo
 - Create a python virtual environment
 - Create a python openai api key
 - Run `export OPENAI_API_KEY=<your-api-key>` on your terminal
